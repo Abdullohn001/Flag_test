@@ -72,7 +72,7 @@ function App() {
                     : "bg-yellow-300"
                 }`}
                 key={index}
-                disabled={isAnswered} // Faqat bir marta tanlash uchun disable qilish
+                disabled={isAnswered} 
               >
                 {answ}
               </button>
