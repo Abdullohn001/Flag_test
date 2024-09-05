@@ -6,8 +6,8 @@ function App() {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [isAnswered, setIsAnswered] = useState(false);
 
-  useEffect(() => {
-    fetch("https://json-api.uz/api/project/quiz-product/quizzes")
+  useEffect( async () => {
+    await fetch("https://json-api.uz/api/project/quiz-product/quizzes")
       .then((response) => response.json())
       .then((data) => {
         const questions = data.data;
